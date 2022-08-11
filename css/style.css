@@ -143,6 +143,29 @@ header nav ul li a:hover {
   font-size: 0.9em;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+footer .enlaces-container {
+  display: flex;
+  gap: 3em;
+  padding-left: 2em;
+}
+footer .navegation-container {
+  display: flex;
+  flex-direction: column;
+}
+footer .title-navegation {
+  padding-bottom: 0.5em;
+}
+footer .enlace {
+  text-decoration: none;
+  color: gray;
+  padding-bottom: 0.5em;
+}
 footer .icon-logo-footer {
   height: 3em;
   width: 12em;
@@ -216,15 +239,18 @@ footer .icon-contact {
   .info-contact-container {
     text-align: center;
   }
-  .enlaces-container {
+  footer .enlaces-container {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 0;
   }
   .navegation-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2em;
+    align-items: center;
   }
   .title-navegation {
     padding-bottom: 0.5em;
@@ -232,10 +258,13 @@ footer .icon-contact {
   .enlace {
     text-decoration: none;
     color: gray;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
   }
   .icon-contact {
     margin-right: 1em;
+  }
+  footer {
+    flex-direction: column;
   }
 }
 @media (max-width: 425px) {
