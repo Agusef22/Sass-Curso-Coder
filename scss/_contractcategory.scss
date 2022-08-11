@@ -1,0 +1,38 @@
+.section-contract {
+    display: flex;
+    flex-direction: column;
+    &-div-product {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1.2em;
+        flex-wrap: wrap;
+    }
+    &-title-contract {
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+
+    .image-product-container {
+        background-color: white;
+        border-radius: 0.3em;
+        padding: 0.6em;
+        margin-bottom: 5em;
+    }
+
+    .image-contract {
+        height: 10.5em;
+        width: 12em;
+        border-radius: 0.4em;
+    } 
+
+    .icon-info {
+        height: 1em;
+        width: 1em;
+    }
+
+    .info-span {
+        font-size: 0.9em;
+    }
+
+
+}

@@ -1,0 +1,49 @@
+.div-container-header {
+    border-bottom: 1px solid transparent;
+    border-bottom-color: #cccccc;
+    position: sticky/*absolute - FIJO;;; */;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: 0.4s;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    height: 14rem;
+
+    nav {
+       
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 1em;
+            li {
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 0.9em;
+                    &:hover {
+                        color: #E9B034;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.img__logo {
+    height: 3em;
+    width: 12em;
+}
+
+.logo {
+    padding-top: 0.2em;
+}

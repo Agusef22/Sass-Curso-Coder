@@ -1,0 +1,20 @@
+{
+  "name": "curso-de-coder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agusef22/Curso-de-coder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agusef22/Curso-de-coder/issues"
+  },
+  "homepage": "https://github.com/Agusef22/Curso-de-coder#readme"
+}
