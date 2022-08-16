@@ -1,0 +1,91 @@
+.section-container-search {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5em;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .div-container-search-icon {
+        display: flex;
+        align-items: center;
+    }
+    .input-buscarcomercio {
+        width: 20em;
+        height: 2.8em;
+        padding-left: 1rem;
+        border: 1px solid transparent;
+        border-color: #cccccc;
+    }
+    .enlace-search-icon {
+        background-color: #E9B034;
+        padding: 0.4em;
+    }
+    .image-icon-search {
+        height: 1.2em;
+        width: 1.2em;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(299deg) brightness(106%) contrast(101%);
+    }
+    .div-container-select {
+        display: flex;
+        gap: 0.5em;
+    }
+    .select {
+        padding: 0.8em;
+        width: 15em;
+        border: 1px solid transparent;
+        border-color: #cccccc;
+        color: gray
+    }
+}
+.section-container-comercio {
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr 0.9fr 0.9fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.2em;
+    padding-top: 2em;
+    padding-bottom: 2rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    .div-container-comercio {
+        background-color: white;
+        border: 1px solid rgba(0,0,0,0.08);
+        box-shadow: 0px 1px 1px 0px rgb(0 0 0 / 10%);
+        border-radius: 3px;
+        text-align: center;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        img {
+            height: 7em;
+            width: 7em;
+            min-width: 7em;
+            border: 0.1rem solid gainsboro;
+            border-radius: 0.5rem;
+        }
+        :hover {
+            
+            -webkit-box-shadow: 0px 1px 24px 0px rgba(209,209,209,1);
+            -moz-box-shadow: 0px 1px 24px 0px rgba(209,209,209,1);
+            box-shadow: 0px 1px 24px 0px rgba(209,209,209,1);
+            
+        }
+    }
+}
+
+.div-container-num {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    .image-num {
+        height: 2rem;
+        width: 2rem;
+        border: 0.1rem solid lightgray;
+        border-radius: 0.5rem;
+        padding: 10.5px;
+        background-color: white;
+    }
+}

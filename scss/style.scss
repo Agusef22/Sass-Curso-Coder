@@ -5,6 +5,10 @@
 @import "categorysection";
 @import "contractcategory";
 @import "footer";
+@import "comercios";
+@import "blog";
+@import "contactanos";
+@import "nosotros";
 
 @include mobile {
     header {
@@ -30,6 +34,43 @@
     .section-category {
         align-items: flex-start;
     }
+
+    .section-container-search {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-container-comercio {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .div-container-num {
+        padding-left: 0;
+    }
+
+    footer .email-container {
+        justify-content: flex-start;
+        gap: 0.3em;
+    }
+
+    footer .number-container {
+        justify-content: flex-start;
+        gap: 0.3em;
+    }
+
+    .container-row .section-container-search-blog {
+        align-items: flex-start;
+    }
+
+    .container-row .section-container-blog {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container-row .search-blog-input {
+        margin-left: 0;
+    }
 }
 
 @media (max-width:1024px) {
@@ -40,6 +81,28 @@
     }
     .image-product-container {
         margin-right: 1em;
+    }
+    .section-container-comercio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .container-row {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:850px) {
+    .div-container-search-icon {
+        width: 100%;
+    }
+    .section-container-search .input-buscarcomercio {
+        width: 100%;
+    }
+    .section-container-search .div-container-select {
+        width: 100%;
+        select {
+            width: 100%;
+        }
     }
 }
 
@@ -79,6 +142,30 @@
     }
     footer {
         flex-direction: column;
+        .email-container {
+            justify-content: center;
+        }
+        .number-container {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .section-form-contact {
+        width: 100%;
+    }
+    .form-contact {
+        width: 100%;
+    }
+
+    .section-nosotros {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .iframe-nosotros {
+        width: 100%;
     }
 }
 
@@ -94,5 +181,27 @@
         margin: 0 auto;
         width: 80%;
         text-align: center;
+    }
+    .section-container-comercio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr ;
+    }
+
+    .container-row .search-blog-input {
+        width: 20em;
+    }
+}
+
+@media (max-width:610px) {
+    .container-row .div-container-blog {
+        flex-wrap: wrap;
+    }
+
+    .container-row .image-popular {
+        height: 10em;
+        width: 12em;
+        min-width: 10em;
+        border: 0.2rem solid none;
+        border-radius: 1rem;
     }
 }
